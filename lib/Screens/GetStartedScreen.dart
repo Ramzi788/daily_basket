@@ -12,47 +12,52 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(image: AssetImage('assets/basket.jpg'))),
+        decoration: BoxDecoration(
+            image: DecorationImage(
+          image: AssetImage('assets/images/shopping-cart.jpeg'),
+          fit: BoxFit.cover,
+        )),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Lottie.network(
-              //     'https://assets7.lottiefiles.com/private_files/lf30_vb7v5ca0.json'),
-
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 20),
-                child: Text(
-                  "We deliver \ngrocery to your\ndoorstep",
-                  style: TextStyle(
-                      fontSize: 35,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1.4),
-                  textAlign: TextAlign.center,
-                ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 40),
+              child: Text(
+                "Buy Groceries With Us Easily",
+                style: TextStyle(
+                    height: 1.5,
+                    wordSpacing: 1.4,
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.4,
+                    color: Colors.white),
+                textAlign: TextAlign.center,
               ),
-              const SizedBox(
-                height: 30,
-              ),
-              ElevatedButton(
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 100, top: 35),
+              child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
+                    backgroundColor: Color.fromARGB(255, 214, 114, 27),
                     padding: EdgeInsets.symmetric(horizontal: 50),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
+                      borderRadius: BorderRadius.circular(20),
                     )),
                 child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                   child: Text(
                     "Get Started",
-                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
                   ),
                 ),
               ),
-            ],
-          ),
-        ));
+            ),
+          ],
+        )));
   }
 }
