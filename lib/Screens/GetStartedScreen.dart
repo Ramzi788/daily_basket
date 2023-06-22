@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 class GetStartedScreen extends StatefulWidget {
   const GetStartedScreen({super.key});
@@ -12,7 +11,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
           image: AssetImage('assets/images/shopping-cart.jpeg'),
           fit: BoxFit.cover,
@@ -38,10 +37,12 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
             Padding(
               padding: const EdgeInsets.only(bottom: 100, top: 35),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/home');
+                },
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 214, 114, 27),
-                    padding: EdgeInsets.symmetric(horizontal: 50),
+                    backgroundColor: Color.fromARGB(255, 217, 113, 22),
+                    padding: const EdgeInsets.symmetric(horizontal: 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     )),
