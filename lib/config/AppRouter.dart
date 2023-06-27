@@ -12,6 +12,7 @@ class AppRouter {
         return HomePage.route();
       case CategoryPage.routeName:
         return CategoryPage.route();
+      
       default:
         return _errorRoute();
     }

@@ -41,7 +41,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
                   Navigator.pushNamed(context, '/home');
                 },
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 217, 113, 22),
+                    backgroundColor: Color.fromARGB(255, 246, 96, 96),
                     padding: const EdgeInsets.symmetric(horizontal: 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
