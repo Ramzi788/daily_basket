@@ -1,3 +1,4 @@
+import 'package:daily_basket/Layouts/NavigatorPage.dart';
 import 'package:daily_basket/Layouts/CategoryPage.dart';
 import 'package:daily_basket/Layouts/GetStartedPage.dart';
 import 'package:daily_basket/Layouts/HomePage.dart';
@@ -12,7 +13,8 @@ class AppRouter {
         return HomePage.route();
       case CategoryPage.routeName:
         return CategoryPage.route();
-      
+      case NavigatorPage.routeName:
+        return NavigatorPage.route();
       default:
         return _errorRoute();
     }

@@ -2,7 +2,7 @@ import 'package:daily_basket/Screens/CategoryScreen.dart';
 import 'package:flutter/material.dart';
 
 class CategoryPage extends StatelessWidget {
-  static const String routeName = '/category';
+  static const String routeName = '/categories';
 
   static Route route() {
     return MaterialPageRoute(

@@ -24,9 +24,9 @@ class SearchField extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10),
                       child: Icon(MdiIcons.fromString('magnify')),
                     ),
-                    const Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
+                    Expanded(
+                      child: TextFormField(
+                        decoration: const InputDecoration(
                             border: InputBorder.none,
                             contentPadding:
                                 EdgeInsets.symmetric(horizontal: 10),
@@ -38,19 +38,19 @@ class SearchField extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
-              child: Container(
-                child: InkWell(
-                    onTap: () {},
-                    splashColor: Colors.transparent,
-                    child: Icon(
-                      MdiIcons.textSearchVariant,
-                      size: 30,
-                      color: Colors.white,
-                    )),
-              ),
-            )
+            // Padding(
+            //   padding: const EdgeInsets.only(left: 10),
+            //   child: IconButton(
+            //     onPressed: () {
+            //       Scaffold.of(context).openEndDrawer();
+            //     },
+            //     icon: const Icon(
+            //       Icons.filter_list,
+            //       size: 30,
+            //       color: Colors.white,
+            //     ),
+            //   ),
+            // )
           ],
         ),
       ),

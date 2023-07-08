@@ -38,10 +38,10 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
               padding: const EdgeInsets.only(bottom: 100, top: 35),
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/home');
+                  Navigator.pushNamed(context, '/navPage');
                 },
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 246, 96, 96),
+                    backgroundColor: Colors.green,
                     padding: const EdgeInsets.symmetric(horizontal: 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),

@@ -1,4 +1,3 @@
-import 'package:daily_basket/Constants/themes.dart';
 import 'package:flutter/material.dart';
 
 class LargeCards extends StatelessWidget {
@@ -15,10 +14,10 @@ class LargeCards extends StatelessWidget {
       child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: NetworkImage(imagePath), fit: BoxFit.cover),
+                image: AssetImage(imagePath), fit: BoxFit.cover),
             border: Border.all(
                 color: const Color.fromARGB(255, 202, 202, 202), width: 0.5),
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(15),
             color: Colors.white,
           ),
           width: screenSize.width / 1.5,
@@ -39,7 +38,6 @@ class LargeCards extends StatelessWidget {
                     ),
                   ),
                 ),
-                
               ],
             ),
           )),
