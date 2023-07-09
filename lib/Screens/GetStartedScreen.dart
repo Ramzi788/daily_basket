@@ -13,9 +13,10 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
     return Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-          image: AssetImage('assets/images/shopping-cart.jpeg'),
-          fit: BoxFit.cover,
-        )),
+                image: NetworkImage(
+                    'https://wallpaperaccess.com/full/4187535.jpg'),
+                fit: BoxFit.cover,
+                opacity: 0.6)),
         child: Center(
             child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -30,7 +31,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1.4,
-                    color: Colors.white),
+                    color: Colors.black),
                 textAlign: TextAlign.center,
               ),
             ),

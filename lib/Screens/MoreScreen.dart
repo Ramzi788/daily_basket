@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:daily_basket/Constants/themes.dart';
+import 'package:daily_basket/Screens/LoginScreen.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -9,10 +10,10 @@ class MoreScreen extends StatefulWidget {
   const MoreScreen({super.key});
 
   @override
-  State<MoreScreen> createState() => _FavoritesScreenState();
+  State<MoreScreen> createState() => _MoreScreenState();
 }
 
-class _FavoritesScreenState extends State<MoreScreen> {
+class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -46,7 +47,13 @@ class _FavoritesScreenState extends State<MoreScreen> {
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Login(),
+                                ));
+                          },
                           style: ElevatedButton.styleFrom(
                               minimumSize: Size(155, 40),
                               backgroundColor: Colors.white,
@@ -87,7 +94,7 @@ class _FavoritesScreenState extends State<MoreScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Profile Details",
+                      "Profile Management",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Padding(
@@ -182,7 +189,7 @@ class _FavoritesScreenState extends State<MoreScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Account Details",
+                      "Account Management",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Padding(
@@ -267,7 +274,66 @@ class _FavoritesScreenState extends State<MoreScreen> {
                     ),
                   ],
                 )),
-          )
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 15),
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Legal",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 2),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 15),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: InkWell(
+                                onTap: () {},
+                                child: Row(
+                                  children: const [
+                                    Text(
+                                      "Privacy",
+                                      style: TextStyle(fontSize: 15),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Divider(
+                              thickness: 1,
+                              color: const Color.fromARGB(255, 209, 209, 209),
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 10, bottom: 10),
+                              child: InkWell(
+                                onTap: () {},
+                                child: Row(
+                                  children: const [
+                                    Text(
+                                      "Terms and Conditions",
+                                      style: TextStyle(fontSize: 15),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                )),
+          ),
         ],
       ),
     );

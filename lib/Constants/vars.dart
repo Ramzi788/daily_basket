@@ -133,3 +133,24 @@ List list = [
     const Color.fromARGB(255, 178, 179, 120),
   ],
 ];
+
+List largecardList = [
+  ["Fruits", 'assets/images/fruits.jpg'],
+  ["Vegetables", 'assets/images/veg.jpg'],
+  ["Dairy", "assets/images/milk.jpg"],
+  ["Meats", "assets/images/meat.jpg"],
+];
+
+List largecardList2 = [
+  ["Ice Cream", 'assets/images/iceCream.jpg'],
+  ["Candy", 'assets/images/candy.jpg'],
+  ["Chips", "assets/images/Chips.jpg"],
+  ["Chocolate", "assets/images/chocolate.jpg"],
+];
+
+List productsList = [
+  ["Marlboro Cigarette", "LBP 100,000", "assets/images/marlboro.png"],
+  ["Marlboro Cigarette", "LBP 100,000", "assets/images/marlboro.png"],
+  ["Marlboro Cigarette", "LBP 100,000", "assets/images/marlboro.png"],
+  ["Marlboro Cigarette", "LBP 100,000", "assets/images/marlboro.png"],
+];

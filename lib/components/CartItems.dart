@@ -15,6 +15,7 @@ class _CartItemsState extends State<CartItems> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
         elevation: 0,
