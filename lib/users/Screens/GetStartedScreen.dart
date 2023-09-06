@@ -1,3 +1,6 @@
+import 'package:daily_basket/Constants/vars.dart';
+import 'package:daily_basket/users/Screens/HomeScreen.dart';
+import 'package:daily_basket/users/Screens/Navigator.dart';
 import 'package:flutter/material.dart';
 
 class GetStartedScreen extends StatefulWidget {
@@ -10,6 +13,7 @@ class GetStartedScreen extends StatefulWidget {
 class _GetStartedScreenState extends State<GetStartedScreen> {
   @override
   Widget build(BuildContext context) {
+    var formKey = GlobalKey<FormState>();
     return Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
@@ -39,7 +43,11 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
               padding: const EdgeInsets.only(bottom: 100, top: 35),
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/navPage');
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MainNav(),
+                      ));
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,

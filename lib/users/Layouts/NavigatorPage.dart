@@ -1,4 +1,4 @@
-import 'package:daily_basket/Screens/Navigator.dart';
+import 'package:daily_basket/users/Screens/Navigator.dart';
 import 'package:flutter/material.dart';
 import '../Screens/MoreScreen.dart';
 

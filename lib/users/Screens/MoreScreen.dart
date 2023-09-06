@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:daily_basket/Constants/themes.dart';
-import 'package:daily_basket/Screens/LoginScreen.dart';
+import 'package:daily_basket/users/authentication/LoginScreen.dart';
+import 'package:daily_basket/users/authentication/RegisterScreen.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -42,7 +43,7 @@ class _MoreScreenState extends State<MoreScreen> {
                         fontWeight: FontWeight.bold),
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
@@ -67,7 +68,13 @@ class _MoreScreenState extends State<MoreScreen> {
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Register(),
+                                ));
+                          },
                           style: ElevatedButton.styleFrom(
                               minimumSize: Size(155, 40),
                               backgroundColor: Colors.white,

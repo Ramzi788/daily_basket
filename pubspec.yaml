@@ -43,6 +43,16 @@ dependencies:
   food_icons: ^0.0.6
   fluentui_system_icons: ^1.1.203
 
+  google_maps_flutter: ^2.3.1
+  mysql1: ^0.20.0
+  sqflite: ^2.2.8+4
+  flutter_cache_manager: ^3.3.1
+  get: ^4.6.5
+  http: ^1.1.0
+  shared_preferences: ^2.2.0
+  fluttertoast: ^8.2.2
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

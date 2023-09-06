@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950695555397",
+    "project_id": "dail-basket",
+    "storage_bucket": "dail-basket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950695555397:android:933988756e524753d6ce2c",
+        "android_client_info": {
+          "package_name": "com.example.daily_basket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950695555397-46kldirt630a88bpqsp5gqjd4onc4u7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeqAmxbxyNPHfWAE39s85a4A06QB8X2ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950695555397-46kldirt630a88bpqsp5gqjd4onc4u7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

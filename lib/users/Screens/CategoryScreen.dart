@@ -1,10 +1,27 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
-import '../Constants/vars.dart';
-import '../components/Categories.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import '../../Constants/vars.dart';
+import '../../components/Categories.dart';
 
-class CategoryScreen extends StatelessWidget {
+class CategoryScreen extends StatefulWidget {
   const CategoryScreen({super.key});
+
+  @override
+  State<CategoryScreen> createState() => _CategoryScreenState();
+}
+
+class _CategoryScreenState extends State<CategoryScreen> {
+  void _showDialog() {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text("Alert"),
+            content: Text("Hey"),
+          );
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +60,9 @@ class CategoryScreen extends StatelessWidget {
                       left: 5,
                     ),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        _showDialog();
+                      },
                       child: Categories(
                         imagePath: image,
                         catIcon: icon,

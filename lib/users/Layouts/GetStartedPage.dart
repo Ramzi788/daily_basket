@@ -1,4 +1,4 @@
-import 'package:daily_basket/Screens/GetStartedScreen.dart';
+import 'package:daily_basket/users/Screens/GetStartedScreen.dart';
 import 'package:flutter/material.dart';
 
 class GetStartedPage extends StatelessWidget {

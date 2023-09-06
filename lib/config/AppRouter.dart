@@ -1,7 +1,7 @@
-import 'package:daily_basket/Layouts/NavigatorPage.dart';
-import 'package:daily_basket/Layouts/CategoryPage.dart';
-import 'package:daily_basket/Layouts/GetStartedPage.dart';
-import 'package:daily_basket/Layouts/HomePage.dart';
+import 'package:daily_basket/users/Layouts/NavigatorPage.dart';
+import 'package:daily_basket/users/Layouts/CategoryPage.dart';
+import 'package:daily_basket/users/Layouts/GetStartedPage.dart';
+import 'package:daily_basket/users/Layouts/HomePage.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {

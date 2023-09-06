@@ -1,8 +1,8 @@
-import 'package:daily_basket/Layouts/CategoryPage.dart';
-import 'package:daily_basket/Screens/CategoryScreen.dart';
-import 'package:daily_basket/Screens/OrdersScreen.dart';
-import 'package:daily_basket/Screens/HomeScreen.dart';
-import 'package:daily_basket/Screens/MoreScreen.dart';
+import 'package:daily_basket/users/Layouts/CategoryPage.dart';
+import 'package:daily_basket/users/Screens/CategoryScreen.dart';
+import 'package:daily_basket/users/Screens/OrdersScreen.dart';
+import 'package:daily_basket/users/Screens/HomeScreen.dart';
+import 'package:daily_basket/users/Screens/MoreScreen.dart';
 import 'package:daily_basket/components/CartItems.dart';
 import 'package:daily_basket/components/Categories.dart';
 import 'package:flutter/material.dart';

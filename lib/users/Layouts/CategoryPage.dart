@@ -1,4 +1,4 @@
-import 'package:daily_basket/Screens/CategoryScreen.dart';
+import 'package:daily_basket/users/Screens/CategoryScreen.dart';
 import 'package:flutter/material.dart';
 
 class CategoryPage extends StatelessWidget {

@@ -35,7 +35,7 @@ class Categories extends StatelessWidget {
                       offset: const Offset(0, 3),
                     )
                   ]),
-              width: 130,
+              width: MediaQuery.of(context).size.width / 3.3,
               height: 120,
               child: Center(
                   child: Column(
@@ -50,6 +50,7 @@ class Categories extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 10),
                     child: Text(
                       catName,
+                      textAlign: TextAlign.center,
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
