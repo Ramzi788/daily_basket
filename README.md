@@ -1,16 +1,7 @@
-# daily_basket
+# Daily Basket Application
 
-A new Flutter project.
+This app is designed for users to order grocery items from the Daily Basket Store. The app functionality is not completed yet, only UI features. 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Instructions
+- Clone the repository: https://github.com/Ramzi788/daily_basket.git
+- Run flutter pub get
